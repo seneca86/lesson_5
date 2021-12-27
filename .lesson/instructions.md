@@ -232,3 +232,4 @@ art_of_war.isalnum()
 
 One general note: remember that, because strings are immutable, none of these examples actually changes the underlying string.
 
+## Capitalize and align
