@@ -99,5 +99,6 @@ sleep.replace('your', 'my', 2)
 # %%
 padded = '  pure  '
 padded.strip()
-
+padded.lstrip()
+padded.rstrip()
 # %%

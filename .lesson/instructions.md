@@ -187,11 +187,14 @@ print('Some neurotransmitters are:', neuro_str)
 
 `replace()` allows for substitution of substrings, one or a given number of times:
 
-# Strip
+## Strip
 
 The `strip()` function removes leading or trailing "padding" characters (by default `' '`, `'\t'`, and `'\n'`); the companion functions `lstrip()` and `rstrip()` do it only from one side.
 
 ```python
-
-
+padded = '  pure  '
+padded.strip()
+padded.lstrip()
+padded.rstrip()
 ```
+
