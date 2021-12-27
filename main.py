@@ -53,3 +53,35 @@ combat = ('surprise'
           'boldness')
 combat
 # %%
+start = 'Once '
+mid = 'upon '
+end = 'a time'
+print(start + mid*3 + end)
+# %%
+sun_tzu = 'invincibility lies in the defense'
+sun_tzu[0]
+sun_tzu[2:14]
+sun_tzu[2::2]
+sun_tzu[-7:]
+sun_tzu[-7:-4]
+sun_tzu[-7::-4]
+# %%
+sign = 'positive'
+sign.replace('posi', 'nega')
+# %%
+churchill = 'Battles are won by slaughter and manoeuver'
+churchill[:]
+churchill[20:]
+churchill[12:]
+churchill[12:28]
+churchill[-9:]
+churchill[19:-14]
+churchill[::2]
+churchill[12:28:2]
+churchill[:28:4]
+churchill[::-1]
+# %%
+len(churchill)
+# %%
+churchill.split()
+# %%

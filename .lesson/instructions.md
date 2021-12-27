@@ -103,3 +103,81 @@ combat = ('surprise'
           'boldness')
 combat
 ```
+
+Strings can also be duplicated with the `*` operator:
+
+```python
+start = 'Once '
+mid = 'upon '
+end = 'a time'
+print(start + mid*3 + end)
+```
+
+## Slicing with `[]`
+The square brackets serve the purpose of indexing to get a single character or several characters from a string:
+
+```python
+sun_tzu = 'invincibility lies in the defense'
+sun_tzu[0]
+sun_tzu[2:14]
+sun_tzu[2::2]
+sun_tzu[-7:]
+sun_tzu[-7:-4]
+sun_tzu[-7::-4]
+```
+
+We will revisit the indexing conventions when dealing with `tuple` and `list`, but for the moment note several rules:
+- the first character is accessed through `0`
+- indexing also works backwards through the use of the `-` sign
+- we can specify the beginning of the interval, end of the interval, and size of the steps with the convention `[beginning:end:interval]`
+
+Strings are inmutable, so we cannot change them directly; we need string functions such as `replace`:
+```python
+sign = 'positive'
+sign[0] = 'n' # this will fail
+sign.replace('posi', 'nega')
+```
+
+Before moving forward, let's practice slicing a bit more and clarify some conventions:
+
+| Slice | what it extracts |
+|-------|-------------|
+| `[:]` | the entire sequence|
+| `[start :]`| from the _start_ offset to the end |
+| `[: end]`| from the beginning to the _end_ offset minus one |
+| `[start : end]`| from the _start_ offset to the _end_ offset minus 1 |
+| `[start : end : step]`| from the _start_ offset to the _end_ offset minus 1, skipping characters by _step_ |
+
+A few examples illustrating this:
+
+```python
+churchill = 'Battles are won by slaughter and manoeuver'
+churchill[:]
+churchill[20:]
+churchill[12:]
+churchill[12:28]
+churchill[-9:]
+churchill[19:-14]
+churchill[::2]
+churchill[12:28:2]
+churchill[:28:4]
+churchill[::-1]
+```
+## Get length and split
+
+Length of a string (i.e. character count) can be measured with the function `len()`:
+```python
+len(churchill)
+```
+
+As opposed to `len()`, `split()` is a function that applies only to strings, and therefore can be invoked as a _method_; we will discuss this different later but for the moment it means that it can be appended to the name of the string with the structure `string.function(arguments)`:
+
+```python
+churchill.split()
+```
+
+The inverse function is `join()`, which uses the same structure: `string.join(list)`:
+```python
+
+
+```
