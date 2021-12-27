@@ -85,3 +85,19 @@ len(churchill)
 # %%
 churchill.split()
 # %%
+neuro_list = ['serotonin', 'dopamine', 'norepinephrine']
+neuro_str = ', '.join(neuro)
+print('Some neurotransmitters are:', neuro_list)
+print('Some neurotransmitters are:', neuro_str)
+# %%
+sleep = 'Sleeping is pretty creepy: for a third \
+of your life you are just not there, \
+floating in this suspended state, \
+with your brain making your eyelids all twitchy.'
+sleep.replace('Sleeping', 'Daydreaming')
+sleep.replace('your', 'my', 2)
+# %%
+padded = '  pure  '
+padded.strip()
+
+# %%

@@ -178,6 +178,20 @@ churchill.split()
 
 The inverse function is `join()`, which uses the same structure: `string.join(list)`:
 ```python
+neuro_list = ['serotonin', 'dopamine', 'norepinephrine']
+neuro_str = ', '.join(neuro)
+print('Some neurotransmitters are:', neuro_list)
+print('Some neurotransmitters are:', neuro_str)
+```
+## Replace substrings
+
+`replace()` allows for substitution of substrings, one or a given number of times:
+
+# Strip
+
+The `strip()` function removes leading or trailing "padding" characters (by default `' '`, `'\t'`, and `'\n'`); the companion functions `lstrip()` and `rstrip()` do it only from one side.
+
+```python
 
 
 ```
