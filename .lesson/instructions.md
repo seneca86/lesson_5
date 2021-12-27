@@ -198,3 +198,37 @@ padded.lstrip()
 padded.rstrip()
 ```
 
+We can specify the leading or trailing character that we want to remove:
+
+```python
+question = 'Who? What?'
+question.strip('?')
+```
+
+Interestingly, `string` has some built-in definitions of character groups:
+
+```python
+import string
+string.punctuation
+string.whitespace
+many_questions = 'How so!!???'
+many_questions.strip(string.punctuation)
+many_whitespaces = '    aaa     '
+many_whitespaces.strip(string.whitespace)
+```
+
+## Search and select
+
+`find()` and its companion function `rfind()` find the offset of a substring from the beginning or from the end, respectively. `count()` counts the occurrences of a certain pattern, and `isalnum()` checks whether all characters in the string are numeric.
+
+```python
+art_of_war.startswith('Now')
+art_of_war.endswith('weakness.')
+art_of_war.find('water')
+art_of_war.rfind('water')
+art_of_war.count('water')
+art_of_war.isalnum()
+```
+
+One general note: remember that, because strings are immutable, none of these examples actually changes the underlying string.
+

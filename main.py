@@ -102,3 +102,26 @@ padded.strip()
 padded.lstrip()
 padded.rstrip()
 # %%
+question = 'Who? What?'
+question.strip('?')
+# %%
+import string
+string.punctuation
+string.whitespace
+many_questions = 'How so!!???'
+many_questions.strip(string.punctuation)
+many_whitespaces = '    aaa     '
+many_whitespaces.strip(string.whitespace)
+# %%
+art_of_war = 'Now an army may be likened to water, \
+for just as flowing water avoids the heighs and \
+hastens to the lowlands, so an army avoids \
+strengths and strikes weakness.'
+# %%
+art_of_war.startswith('Now')
+art_of_war.endswith('weakness.')
+art_of_war.find('water')
+art_of_war.rfind('water')
+art_of_war.count('water')
+art_of_war.isalnum()
+# %%
