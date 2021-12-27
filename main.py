@@ -26,3 +26,30 @@ print(munger)
 print(volker)
 print(lynch)
 # %%
+str(10.4)
+str(True)
+# %%
+poem = 'All that is gold does not glitter,\nNot all those who wander are lost;\nThe old that is strong does not wither,\nDeep roots are not reached by the frost'
+print(poem)
+tabs = 'The\tsoul\tbecomes\tdyed\twith\tthe\tcolour\t of\tits\tthoughts.'
+print(tabs)
+# %%
+height = 'My height is 6\'2.8\", I can print this by using a \\'
+print(height)
+# %%
+word1 = 'speed'
+word2 = 'and'
+word3 = 'focus'
+word1 + word2 + word3
+# %%
+word4 = 'creating'
+word5 = 'and'
+word6 = 'exploiting'
+word7 = 'vulnerabilities'
+print(word4, word5, word6, word7)
+# %%
+combat = ('surprise'
+          'and'
+          'boldness')
+combat
+# %%
