@@ -165,3 +165,12 @@ print(teaching)
 teaching = f'From my grandfather I learned {learning1.capitalize()} and {learning2.rjust(40)}'
 print(teaching)
 # %%
+teaching = f'From my grandfather I learned {learning1:20} and {learning2:.^30}'
+print(teaching)
+# %%
+a = 10
+b = 'bucks'
+print(f'{a=}, {b=}')
+print(f'{a=:>4}, {b=:.^10}')
+
+# %%

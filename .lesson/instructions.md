@@ -317,8 +317,18 @@ teaching = f'From my grandfather I learned {learning1.capitalize()} and {learnin
 print(teaching)
 ```
 
-Expressions such as `capitalize()` or `rjust()` are allowed inside the curly brackets. Additionally, a `:` can be used for width, padding, alignment, etc.
+Expressions such as `capitalize()` or `rjust()` are allowed inside the curly brackets. Additionally, a `:` can be used for width (`'.'`), padding (`' '`), alignment (`'>'`, `'^'`, `'<'`), etc. We will not cover them all extensively but here is one example.
 
 ```python
+teaching = f'From my grandfather I learned {learning1:20} and {learning2:.^30}'
+print(teaching)
+```
+ 
+Finally, a handy shortcut for printing variable names as well as their values is to use a `=` in combination with the `{}`. The formatting through the `:` can also be used in this case.
 
+```python
+a = 10
+b = 'bucks'
+print(f'{a=}, {b=}')
+print(f'{a=:>4}, {b=:.^10}')
 ```
