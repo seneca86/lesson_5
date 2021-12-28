@@ -86,7 +86,7 @@ len(churchill)
 churchill.split()
 # %%
 neuro_list = ['serotonin', 'dopamine', 'norepinephrine']
-neuro_str = ', '.join(neuro)
+neuro_str = ', '.join(neuro_list)
 print('Some neurotransmitters are:', neuro_list)
 print('Some neurotransmitters are:', neuro_str)
 # %%
