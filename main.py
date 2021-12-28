@@ -152,3 +152,16 @@ stock = 'TSLA'
 another_stock = 'NVS'
 'My position is bullish on %s and %s' % (stock, another_stock)
 # %%
+silverware = 'spoon'
+furniture = 'cupboard'
+'The {} is in the {}.'.format(silverware, furniture)
+'The {1} is in the {0}.'.format(silverware, furniture)
+'The {pottery} is in the {place}'.format(pottery='pan', place='shelf')
+# %%
+learning1 = 'good morals'
+learning2 = 'freedom from anger'
+teaching = f'From my grandfather I learned {learning1} and {learning2}'
+print(teaching)
+teaching = f'From my grandfather I learned {learning1.capitalize()} and {learning2.rjust(40)}'
+print(teaching)
+# %%

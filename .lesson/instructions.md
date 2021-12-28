@@ -292,8 +292,33 @@ The format string '%s' can include opriontal arguments for minimum and maximum w
 
 ### New style
 
-Introducted in Python 3, this format has the structure `format_string.format(data)`, where the format string is not the same as in the "Old style".
+Introducted in Python 3, this format has the structure `format_string.format(data)`, where the format string is not the same as in the "old style". It is intuitive enough to be explained with a couple of examples.
 
+```python
+silverware = 'spoon'
+furniture = 'cupboard'
+'The {} is in the {}.'.format(silverware, furniture)
+'The {1} is in the {0}.'.format(silverware, furniture)
+'The {pottery} is in the {place}'.format(pottery='pan', place='shelf')
+```
 
+Again, things can get more complicated when we want to pad the value string, align it, prepend minus signs, set minimum width, etc. We will skip these and jump to the recommended "newest" style: f-strings
 
+### f-strings
 
+f-strings were introduced in Python 3.6 and are now the preferred way to format strings. This format requires the letter `f` to be typed right before the initial quote, and to use curly brackets to include the values of variables into the strings. You may think of it as an expansion of the "new-style" formatting that does not use the `format` keyword nor the empty `{}`.
+
+```python
+learning1 = 'good morals'
+learning2 = 'freedom from anger'
+teaching = f'From my grandfather I learned {learning1} and {learning2}'
+print(teaching)
+teaching = f'From my grandfather I learned {learning1.capitalize()} and {learning2.rjust(40)}'
+print(teaching)
+```
+
+Expressions such as `capitalize()` or `rjust()` are allowed inside the curly brackets. Additionally, a `:` can be used for width, padding, alignment, etc.
+
+```python
+
+```
