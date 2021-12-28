@@ -233,3 +233,67 @@ art_of_war.isalnum()
 One general note: remember that, because strings are immutable, none of these examples actually changes the underlying string.
 
 ## Capitalize and align
+Python counts with several functions to capitalize and align sentences:
+
+```python
+vandegrift = 'positions are seldom lost because they \
+have been destroyed, but almost invariably because the \
+leader has decided in his own mind that the position \
+cannot be held.'
+
+vandegrift.capitalize()
+vandegrift.title()
+vandegrift.upper()
+vandegrift.lower()
+vandegrift.swapcase()
+```
+
+```python
+liddle = '    in war the chief incalculable is the human will    '
+liddle.center(90)
+liddle.ljust(90)
+liddle.rjust(90)
+```
+
+## Format
+
+Python has been evolving through different formatting styles. Let's review the basics of each of them.
+
+### Old style
+
+The old style consists of the structure `format_string % data`.
+
+| sequence | data type|
+|----------|----------|
+| `%s` | string |
+|`%d`| decimal integer|
+|`%f`| decimal float|
+|`%e`| exponential float|
+|`%g`| decimal or exponential float|
+|`%%`| a literal `%`|
+
+
+```python
+'%s' % 10
+'%d' % 10
+'%f' % 10
+'%e' % 10.510
+'%g' % 10.510
+'%d%%' % 100
+stock = 'TSLA'
+'My position is bullish on %s' %stock
+another_stock = 'NVS'
+'My position is bullish on %s and %s' % (stock, another_stock)
+```
+
+The number of `%` in the string needs to match the number of variables after the `%` that follows the string. Multiple data must be grouped into a _tuple_.
+
+The format string '%s' can include opriontal arguments for minimum and maximum widths, alignment, and character fillings. This is a little language on its own, and more limited to the newer styles, so we will not get into details.
+
+### New style
+
+Introducted in Python 3, this format has the structure `format_string.format(data)`, where the format string is not the same as in the "Old style".
+
+
+
+

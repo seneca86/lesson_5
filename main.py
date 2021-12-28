@@ -125,3 +125,30 @@ art_of_war.rfind('water')
 art_of_war.count('water')
 art_of_war.isalnum()
 # %%
+vandegrift = 'positions are seldom lost because they \
+have been destroyed, but almost invariably because the \
+leader has decided in his own mind that the position \
+cannot be held.'
+
+vandegrift.capitalize()
+vandegrift.title()
+vandegrift.upper()
+vandegrift.lower()
+vandegrift.swapcase()
+# %%
+liddle = '    in war the chief incalculable is the human will    '
+liddle.center(90)
+liddle.ljust(90)
+liddle.rjust(90)
+# %%
+'%s' % 10
+'%d' % 10
+'%f' % 10
+'%e' % 10.510
+'%g' % 10.510
+'%d%%' % 100
+stock = 'TSLA'
+'My position is bullish on %s' %stock
+another_stock = 'NVS'
+'My position is bullish on %s and %s' % (stock, another_stock)
+# %%
